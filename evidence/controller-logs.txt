@@ -1,0 +1,17 @@
+2026/02/06 18:19:58 INFO Starting packet capture controller node=antrea-test-control-plane
+2026/02/06 18:19:58 INFO Starting capture pod=test-ping namespace=default maxFiles=5
+2026/02/06 18:19:59 INFO Controller started, watching pods
+2026/02/06 18:19:59 INFO Capture started pod=test-ping pid=21 file=/capture/capture-test-ping.pcap
+tcpdump: data link type LINUX_SLL2
+tcpdump: listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes
+2026/02/06 18:20:22 INFO Annotation removed, stopping capture pod=test-ping namespace=default
+2026/02/06 18:20:22 INFO Stopping capture pod=test-ping pid=21
+5458 packets captured
+10957 packets received by filter
+0 packets dropped by kernel
+2026/02/06 18:20:22 INFO Removed capture file file=/capture/capture-test-ping.pcap0
+2026/02/06 18:20:22 INFO Removed capture file file=/capture/capture-test-ping.pcap1
+2026/02/06 18:20:25 INFO Starting capture pod=test-ping namespace=default maxFiles=5
+2026/02/06 18:20:25 INFO Capture started pod=test-ping pid=22 file=/capture/capture-test-ping.pcap
+tcpdump: data link type LINUX_SLL2
+tcpdump: listening on any, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144 bytes

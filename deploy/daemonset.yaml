@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: packetcapture-controller
+  namespace: kube-system
+spec:
+  selector:
+    matchLabels:
+      app: packetcapture-controller
+  template:
+    metadata:
+      labels:
+        app: packetcapture-controller
+    spec:
+      serviceAccountName: packetcapture-controller
+      hostNetwork: true
+      containers:
+      - name: controller
+        image: packetcapture-controller:latest
+        imagePullPolicy: Never
+        env:
+        - name: NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+        securityContext:
+          capabilities:
+            add:
+            - NET_RAW
+            - NET_ADMIN
+        volumeMounts:
+        - name: capture
+          mountPath: /capture
+      volumes:
+      - name: capture
+        emptyDir: {}
+      tolerations:
+      - operator: Exists
+        effect: NoSchedule

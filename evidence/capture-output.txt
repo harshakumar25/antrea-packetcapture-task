@@ -1,0 +1,100 @@
+reading from file /Users/harshkumar/Desktop/lfx_mentorship_antrea/Antrea_test-task/packetcapture-controller/evidence/capture.pcap, link-type LINUX_SLL2 (Linux cooked v2), snapshot length 262144
+Warning: interface names might be incorrect
+00:00:00.796340 lo0   In  IP localhost.40328 > localhost.10259: Flags [S], seq 374382054, win 65495, options [mss 65495,sackOK,TS val 3163954301 ecr 0,nop,wscale 7], length 0
+00:00:00.796380 lo0   In  IP localhost.10259 > localhost.40328: Flags [S.], seq 1864184064, ack 374382055, win 65483, options [mss 65495,sackOK,TS val 3163954302 ecr 3163954301,nop,wscale 7], length 0
+00:00:00.796389 lo0   In  IP localhost.40328 > localhost.10259: Flags [.], ack 1, win 512, options [nop,nop,TS val 3163954302 ecr 3163954302], length 0
+00:00:00.798091 lo0   In  IP localhost.40328 > localhost.10259: Flags [P.], seq 1:1472, ack 1, win 512, options [nop,nop,TS val 3163954303 ecr 3163954302], length 1471
+00:00:00.798111 lo0   In  IP localhost.10259 > localhost.40328: Flags [.], ack 1472, win 625, options [nop,nop,TS val 3163954303 ecr 3163954303], length 0
+00:00:00.802448 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [S], seq 3976731735, win 65495, options [mss 65495,sackOK,TS val 1879097142 ecr 0,nop,wscale 7], length 0
+00:00:00.802468 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [S.], seq 452994052, ack 3976731736, win 65483, options [mss 65495,sackOK,TS val 1879097142 ecr 1879097142,nop,wscale 7], length 0
+00:00:00.802501 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [.], ack 1, win 512, options [nop,nop,TS val 1879097142 ecr 1879097142], length 0
+00:00:00.803349 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [P.], seq 1:1472, ack 1, win 512, options [nop,nop,TS val 1879097143 ecr 1879097142], length 1471
+00:00:00.803376 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [.], ack 1472, win 625, options [nop,nop,TS val 1879097143 ecr 1879097143], length 0
+00:00:00.805012 lo0   In  IP localhost.10259 > localhost.40328: Flags [P.], seq 1:3352, ack 1472, win 625, options [nop,nop,TS val 3163954310 ecr 3163954303], length 3351
+00:00:00.805031 lo0   In  IP localhost.40328 > localhost.10259: Flags [.], ack 3352, win 778, options [nop,nop,TS val 3163954310 ecr 3163954310], length 0
+00:00:00.806391 lo0   In  IP localhost.40328 > localhost.10259: Flags [P.], seq 1472:1566, ack 3352, win 778, options [nop,nop,TS val 3163954312 ecr 3163954310], length 94
+00:00:00.806611 lo0   In  IP localhost.40328 > localhost.10259: Flags [P.], seq 1566:1658, ack 3352, win 778, options [nop,nop,TS val 3163954312 ecr 3163954310], length 92
+00:00:00.806911 lo0   In  IP localhost.40328 > localhost.10259: Flags [P.], seq 1658:1730, ack 3352, win 778, options [nop,nop,TS val 3163954312 ecr 3163954310], length 72
+00:00:00.807139 lo0   In  IP localhost.10259 > localhost.40328: Flags [.], ack 1730, win 625, options [nop,nop,TS val 3163954312 ecr 3163954312], length 0
+00:00:00.807203 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [P.], seq 1:2709, ack 1472, win 625, options [nop,nop,TS val 1879097146 ecr 1879097143], length 2708
+00:00:00.807218 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [.], ack 2709, win 747, options [nop,nop,TS val 1879097146 ecr 1879097146], length 0
+00:00:00.807562 lo0   In  IP localhost.10259 > localhost.40328: Flags [P.], seq 3352:3413, ack 1730, win 625, options [nop,nop,TS val 3163954313 ecr 3163954312], length 61
+00:00:00.807794 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [P.], seq 1472:1566, ack 2709, win 747, options [nop,nop,TS val 1879097147 ecr 1879097146], length 94
+00:00:00.807864 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [P.], seq 1566:1658, ack 2709, win 747, options [nop,nop,TS val 1879097147 ecr 1879097146], length 92
+00:00:00.807879 lo0   In  IP localhost.10259 > localhost.40328: Flags [P.], seq 3413:3457, ack 1730, win 625, options [nop,nop,TS val 3163954313 ecr 3163954312], length 44
+00:00:00.807961 lo0   In  IP localhost.40328 > localhost.10259: Flags [P.], seq 1730:1761, ack 3457, win 778, options [nop,nop,TS val 3163954313 ecr 3163954313], length 31
+00:00:00.807988 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [P.], seq 1658:1730, ack 2709, win 747, options [nop,nop,TS val 1879097147 ecr 1879097146], length 72
+00:00:00.808216 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [.], ack 1730, win 625, options [nop,nop,TS val 1879097147 ecr 1879097147], length 0
+00:00:00.808376 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [P.], seq 2709:2770, ack 1730, win 625, options [nop,nop,TS val 1879097148 ecr 1879097147], length 61
+00:00:00.808417 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [P.], seq 2770:2814, ack 1730, win 625, options [nop,nop,TS val 1879097148 ecr 1879097147], length 44
+00:00:00.808509 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [.], ack 2814, win 747, options [nop,nop,TS val 1879097148 ecr 1879097148], length 0
+00:00:00.808554 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [P.], seq 1730:1761, ack 2814, win 747, options [nop,nop,TS val 1879097148 ecr 1879097148], length 31
+00:00:00.811180 lo0   In  IP localhost.10259 > localhost.40328: Flags [P.], seq 3457:3496, ack 1761, win 625, options [nop,nop,TS val 3163954316 ecr 3163954313], length 39
+00:00:00.811596 lo0   In  IP localhost.10259 > localhost.40328: Flags [P.], seq 3496:3613, ack 1761, win 625, options [nop,nop,TS val 3163954317 ecr 3163954313], length 117
+00:00:00.811680 lo0   In  IP localhost.40328 > localhost.10259: Flags [.], ack 3613, win 778, options [nop,nop,TS val 3163954317 ecr 3163954316], length 0
+00:00:00.811699 lo0   In  IP localhost.10259 > localhost.40328: Flags [P.], seq 3613:3646, ack 1761, win 625, options [nop,nop,TS val 3163954317 ecr 3163954317], length 33
+00:00:00.811971 lo0   In  IP localhost.40328 > localhost.10259: Flags [P.], seq 1761:1785, ack 3646, win 778, options [nop,nop,TS val 3163954317 ecr 3163954317], length 24
+00:00:00.812020 lo0   In  IP localhost.40328 > localhost.10259: Flags [F.], seq 1785, ack 3646, win 778, options [nop,nop,TS val 3163954317 ecr 3163954317], length 0
+00:00:00.812095 lo0   In  IP localhost.10259 > localhost.40328: Flags [P.], seq 3646:3670, ack 1786, win 625, options [nop,nop,TS val 3163954317 ecr 3163954317], length 24
+00:00:00.812133 lo0   In  IP localhost.40328 > localhost.10259: Flags [R], seq 374383840, win 0, length 0
+00:00:00.815852 lo0   In  IP localhost.35604 > localhost.2379: Flags [P.], seq 1984674502:1984674585, ack 577682769, win 639, options [nop,nop,TS val 3163954321 ecr 3163953317], length 83
+00:00:00.818698 lo0   In  IP localhost.2379 > localhost.35604: Flags [P.], seq 1:40, ack 83, win 627, options [nop,nop,TS val 3163954324 ecr 3163954321], length 39
+00:00:00.818719 lo0   In  IP localhost.35604 > localhost.2379: Flags [.], ack 40, win 639, options [nop,nop,TS val 3163954324 ecr 3163954324], length 0
+00:00:00.818747 lo0   In  IP localhost.2379 > localhost.35604: Flags [P.], seq 40:104, ack 83, win 627, options [nop,nop,TS val 3163954324 ecr 3163954324], length 64
+00:00:00.818753 lo0   In  IP localhost.35604 > localhost.2379: Flags [.], ack 104, win 639, options [nop,nop,TS val 3163954324 ecr 3163954324], length 0
+00:00:00.818880 lo0   In  IP localhost.2379 > localhost.35604: Flags [P.], seq 104:136, ack 83, win 627, options [nop,nop,TS val 3163954324 ecr 3163954324], length 32
+00:00:00.818892 lo0   In  IP localhost.35604 > localhost.2379: Flags [.], ack 136, win 639, options [nop,nop,TS val 3163954324 ecr 3163954324], length 0
+00:00:00.819093 lo0   In  IP localhost.35604 > localhost.2379: Flags [P.], seq 83:135, ack 136, win 639, options [nop,nop,TS val 3163954324 ecr 3163954324], length 52
+00:00:00.819169 lo0   In  IP localhost.2379 > localhost.35604: Flags [P.], seq 136:175, ack 135, win 627, options [nop,nop,TS val 3163954324 ecr 3163954324], length 39
+00:00:00.819730 lo0   In  IP localhost.35616 > localhost.2379: Flags [P.], seq 1089285589:1089285669, ack 2647097863, win 639, options [nop,nop,TS val 3163954325 ecr 3163952323], length 80
+00:00:00.820176 lo0   In  IP localhost.2379 > localhost.40986: Flags [P.], seq 1633090878:1633090942, ack 1933956071, win 628, options [nop,nop,TS val 3163954325 ecr 3163948989], length 64
+00:00:00.820199 lo0   In  IP localhost.40986 > localhost.2379: Flags [.], ack 64, win 639, options [nop,nop,TS val 3163954325 ecr 3163954325], length 0
+00:00:00.820583 lo0   In  IP localhost.2379 > localhost.35616: Flags [P.], seq 1:40, ack 80, win 627, options [nop,nop,TS val 3163954326 ecr 3163954325], length 39
+00:00:00.820605 lo0   In  IP localhost.35616 > localhost.2379: Flags [.], ack 40, win 639, options [nop,nop,TS val 3163954326 ecr 3163954326], length 0
+00:00:00.820676 lo0   In  IP localhost.2379 > localhost.35616: Flags [P.], seq 40:104, ack 80, win 627, options [nop,nop,TS val 3163954326 ecr 3163954326], length 64
+00:00:00.820681 lo0   In  IP localhost.35616 > localhost.2379: Flags [.], ack 104, win 639, options [nop,nop,TS val 3163954326 ecr 3163954326], length 0
+00:00:00.820734 lo0   In  IP localhost.2379 > localhost.35616: Flags [P.], seq 104:136, ack 80, win 627, options [nop,nop,TS val 3163954326 ecr 3163954326], length 32
+00:00:00.820736 lo0   In  IP localhost.35616 > localhost.2379: Flags [.], ack 136, win 639, options [nop,nop,TS val 3163954326 ecr 3163954326], length 0
+00:00:00.820781 lo0   In  IP localhost.40986 > localhost.2379: Flags [P.], seq 1:53, ack 64, win 639, options [nop,nop,TS val 3163954326 ecr 3163954325], length 52
+00:00:00.820860 lo0   In  IP localhost.2379 > localhost.40986: Flags [P.], seq 64:103, ack 53, win 628, options [nop,nop,TS val 3163954326 ecr 3163954326], length 39
+00:00:00.821586 lo0   In  IP localhost.35616 > localhost.2379: Flags [P.], seq 80:132, ack 136, win 639, options [nop,nop,TS val 3163954327 ecr 3163954326], length 52
+00:00:00.821877 lo0   In  IP localhost.2379 > localhost.35616: Flags [P.], seq 136:175, ack 132, win 627, options [nop,nop,TS val 3163954327 ecr 3163954327], length 39
+00:00:00.822129 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [P.], seq 2814:2853, ack 1761, win 625, options [nop,nop,TS val 1879097161 ecr 1879097148], length 39
+00:00:00.822253 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [P.], seq 2853:3109, ack 1761, win 625, options [nop,nop,TS val 1879097161 ecr 1879097148], length 256
+00:00:00.822308 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [.], ack 3109, win 762, options [nop,nop,TS val 1879097161 ecr 1879097161], length 0
+00:00:00.822410 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [P.], seq 3109:3142, ack 1761, win 625, options [nop,nop,TS val 1879097162 ecr 1879097161], length 33
+00:00:00.822603 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [P.], seq 1761:1785, ack 3142, win 762, options [nop,nop,TS val 1879097162 ecr 1879097162], length 24
+00:00:00.822706 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [F.], seq 1785, ack 3142, win 762, options [nop,nop,TS val 1879097162 ecr 1879097162], length 0
+00:00:00.822708 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.52756: Flags [P.], seq 3142:3166, ack 1785, win 625, options [nop,nop,TS val 1879097162 ecr 1879097162], length 24
+00:00:00.822742 lo0   In  IP 172.18.0.2.52756 > 172.18.0.2.sun-sr-https: Flags [R], seq 3976733520, win 0, length 0
+00:00:00.860583 lo0   In  IP localhost.35604 > localhost.2379: Flags [.], ack 175, win 639, options [nop,nop,TS val 3163954366 ecr 3163954324], length 0
+00:00:00.862451 lo0   In  IP localhost.35616 > localhost.2379: Flags [.], ack 175, win 639, options [nop,nop,TS val 3163954368 ecr 3163954327], length 0
+00:00:00.862570 lo0   In  IP localhost.40986 > localhost.2379: Flags [.], ack 103, win 639, options [nop,nop,TS val 3163954368 ecr 3163954326], length 0
+00:00:00.910101 lo0   In  IP localhost.2379 > localhost.54216: Flags [P.], seq 1392399544:1392399608, ack 4276596184, win 627, options [nop,nop,TS val 3163954415 ecr 3163949069], length 64
+00:00:00.910144 lo0   In  IP localhost.54216 > localhost.2379: Flags [.], ack 64, win 639, options [nop,nop,TS val 3163954415 ecr 3163954415], length 0
+00:00:00.911049 lo0   In  IP localhost.54216 > localhost.2379: Flags [P.], seq 1:53, ack 64, win 639, options [nop,nop,TS val 3163954416 ecr 3163954415], length 52
+00:00:00.911329 lo0   In  IP localhost.2379 > localhost.54216: Flags [P.], seq 64:103, ack 53, win 627, options [nop,nop,TS val 3163954417 ecr 3163954416], length 39
+00:00:00.952395 lo0   In  IP localhost.54216 > localhost.2379: Flags [.], ack 103, win 639, options [nop,nop,TS val 3163954458 ecr 3163954417], length 0
+00:00:00.967266 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.56668: Flags [P.], seq 804019869:804019987, ack 220798212, win 770, options [nop,nop,TS val 1879097306 ecr 1879096148], length 118
+00:00:00.967442 lo0   In  IP 172.18.0.2.56668 > 172.18.0.2.sun-sr-https: Flags [.], ack 118, win 35996, options [nop,nop,TS val 1879097307 ecr 1879097306], length 0
+00:00:00.977161 lo0   In  IP 172.18.0.2.sun-sr-https > 172.18.0.2.56668: Flags [P.], seq 118:264, ack 1, win 770, options [nop,nop,TS val 1879097316 ecr 1879097307], length 146
+00:00:00.977194 lo0   In  IP 172.18.0.2.56668 > 172.18.0.2.sun-sr-https: Flags [.], ack 264, win 35995, options [nop,nop,TS val 1879097316 ecr 1879097316], length 0
+00:00:01.017026 lo0   In  IP localhost.2379 > localhost.36518: Flags [P.], seq 1327759162:1327759226, ack 177097358, win 627, options [nop,nop,TS val 3163954522 ecr 3163949539], length 64
+00:00:01.017058 lo0   In  IP localhost.36518 > localhost.2379: Flags [.], ack 64, win 639, options [nop,nop,TS val 3163954522 ecr 3163954522], length 0
+00:00:01.018184 lo0   In  IP localhost.36518 > localhost.2379: Flags [P.], seq 1:53, ack 64, win 639, options [nop,nop,TS val 3163954523 ecr 3163954522], length 52
+00:00:01.018322 lo0   In  IP localhost.2379 > localhost.36518: Flags [P.], seq 64:103, ack 53, win 627, options [nop,nop,TS val 3163954524 ecr 3163954523], length 39
+00:00:01.052232 lo0   In  IP localhost.2379 > localhost.54384: Flags [P.], seq 2355172229:2355172293, ack 1551340823, win 627, options [nop,nop,TS val 3163954557 ecr 3163949323], length 64
+00:00:01.052267 lo0   In  IP localhost.54384 > localhost.2379: Flags [.], ack 64, win 639, options [nop,nop,TS val 3163954557 ecr 3163954557], length 0
+00:00:01.053437 lo0   In  IP localhost.54384 > localhost.2379: Flags [P.], seq 1:53, ack 64, win 639, options [nop,nop,TS val 3163954559 ecr 3163954557], length 52
+00:00:01.054034 lo0   In  IP localhost.2379 > localhost.54384: Flags [P.], seq 64:103, ack 53, win 627, options [nop,nop,TS val 3163954559 ecr 3163954559], length 39
+00:00:01.054915 lo0   In  IP localhost.2379 > localhost.40976: Flags [P.], seq 1480618683:1480618747, ack 1422753270, win 628, options [nop,nop,TS val 3163954560 ecr 3163949476], length 64
+00:00:01.055075 lo0   In  IP localhost.40976 > localhost.2379: Flags [.], ack 64, win 639, options [nop,nop,TS val 3163954560 ecr 3163954560], length 0
+00:00:01.057017 lo0   In  IP localhost.40976 > localhost.2379: Flags [P.], seq 1:53, ack 64, win 639, options [nop,nop,TS val 3163954562 ecr 3163954560], length 52
+00:00:01.057329 lo0   In  IP localhost.2379 > localhost.40976: Flags [P.], seq 64:103, ack 53, win 628, options [nop,nop,TS val 3163954562 ecr 3163954562], length 39
+00:00:01.059337 lo0   In  IP localhost.36518 > localhost.2379: Flags [.], ack 103, win 639, options [nop,nop,TS val 3163954565 ecr 3163954524], length 0
+00:00:01.087089 lo0   In  IP localhost.2379 > localhost.35934: Flags [P.], seq 4058305445:4058305509, ack 3256209417, win 10574, options [nop,nop,TS val 3163954592 ecr 3163949385], length 64
+00:00:01.087125 lo0   In  IP localhost.35934 > localhost.2379: Flags [.], ack 64, win 9666, options [nop,nop,TS val 3163954592 ecr 3163954592], length 0
+00:00:01.087728 lo0   In  IP localhost.35934 > localhost.2379: Flags [P.], seq 1:53, ack 64, win 9666, options [nop,nop,TS val 3163954593 ecr 3163954592], length 52
+00:00:01.087868 lo0   In  IP localhost.2379 > localhost.35934: Flags [P.], seq 64:103, ack 53, win 10574, options [nop,nop,TS val 3163954593 ecr 3163954593], length 39
+00:00:01.094441 lo0   In  IP localhost.54384 > localhost.2379: Flags [.], ack 103, win 639, options [nop,nop,TS val 3163954600 ecr 3163954559], length 0
+00:00:01.098393 lo0   In  IP localhost.40976 > localhost.2379: Flags [.], ack 103, win 639, options [nop,nop,TS val 3163954604 ecr 3163954562], length 0

@@ -1,0 +1,6 @@
+total 4172
+-rw-r--r-- 1 tcpdump tcpdump 1000161 Feb  6 18:30 capture-test-ping.pcap0
+-rw-r--r-- 1 tcpdump tcpdump  258048 Feb  6 18:30 capture-test-ping.pcap1
+-rw-r--r-- 1 tcpdump tcpdump 1000493 Feb  6 18:29 capture-test-ping.pcap2
+-rw-r--r-- 1 tcpdump tcpdump 1000058 Feb  6 18:29 capture-test-ping.pcap3
+-rw-r--r-- 1 tcpdump tcpdump 1000078 Feb  6 18:30 capture-test-ping.pcap4

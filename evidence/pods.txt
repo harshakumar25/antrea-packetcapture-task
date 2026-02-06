@@ -1,0 +1,13 @@
+NAMESPACE            NAME                                                READY   STATUS    RESTARTS   AGE     IP           NODE                        NOMINATED NODE   READINESS GATES
+default              test-ping                                           1/1     Running   0          54m     10.244.0.5   antrea-test-control-plane   <none>           <none>
+kube-system          antrea-agent-ppwd7                                  2/2     Running   0          62m     172.18.0.2   antrea-test-control-plane   <none>           <none>
+kube-system          antrea-controller-84d8cffc9f-p8nkz                  1/1     Running   0          62m     172.18.0.2   antrea-test-control-plane   <none>           <none>
+kube-system          coredns-66bc5c9577-2htt2                            1/1     Running   0          62m     10.244.0.2   antrea-test-control-plane   <none>           <none>
+kube-system          coredns-66bc5c9577-nhmk9                            1/1     Running   0          62m     10.244.0.4   antrea-test-control-plane   <none>           <none>
+kube-system          etcd-antrea-test-control-plane                      1/1     Running   0          63m     172.18.0.2   antrea-test-control-plane   <none>           <none>
+kube-system          kube-apiserver-antrea-test-control-plane            1/1     Running   0          63m     172.18.0.2   antrea-test-control-plane   <none>           <none>
+kube-system          kube-controller-manager-antrea-test-control-plane   1/1     Running   0          63m     172.18.0.2   antrea-test-control-plane   <none>           <none>
+kube-system          kube-proxy-kptnk                                    1/1     Running   0          62m     172.18.0.2   antrea-test-control-plane   <none>           <none>
+kube-system          kube-scheduler-antrea-test-control-plane            1/1     Running   0          63m     172.18.0.2   antrea-test-control-plane   <none>           <none>
+kube-system          packetcapture-controller-cx5k4                      1/1     Running   0          9m58s   172.18.0.2   antrea-test-control-plane   <none>           <none>
+local-path-storage   local-path-provisioner-7b8c8ddbd6-n42nr             1/1     Running   0          62m     10.244.0.3   antrea-test-control-plane   <none>           <none>
