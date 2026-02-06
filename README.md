@@ -35,87 +35,98 @@ This project implements a "poor-man's version" of Antrea's PacketCapture feature
 ## Quick Start
 
 ### Prerequisites
-- Docker
-- kind (Kubernetes in Docker)
-- kubectl
-- Helm (for Antrea installation)
-- Go 1.23+
+- Docker (https://docs.docker.com/get-docker/)
+- kind (Kubernetes in Docker) (https://kind.sigs.k8s.io/docs/user/quick-start/)
+- kubectl (https://kubernetes.io/docs/tasks/tools/)
+- Helm (for Antrea installation) (https://helm.sh/docs/intro/install/)
+- Go 1.23+ (https://go.dev/doc/install)
 
 ### Setup
 
 1. **Create kind cluster with CNI disabled:**
 
+```bash
 kind create cluster --name antrea-test --config kind-config.yaml
-
+```
 
 2. **Install Antrea CNI:**
 
+```bash
 helm repo add antrea https://charts.antrea.io
 helm repo update
 helm install antrea antrea/antrea -n kube-system
-
+```
 
 3. **Wait for Antrea to be ready:**
 
+```bash
 kubectl wait --for=condition=Ready pods -l app=antrea -n kube-system --timeout=120s
-
+```
 
 4. **Build and load the controller image:**
 
+```bash
 docker build -t packetcapture-controller:latest .
 kind load docker-image packetcapture-controller:latest --name antrea-test
-
+```
 
 5. **Deploy the controller:**
 
+```bash
 kubectl apply -f deploy/rbac.yaml
 kubectl apply -f deploy/daemonset.yaml
-
+```
 
 ### Verification
 
 1. **Deploy test Pod:**
 
+```bash
 kubectl apply -f deploy/test-pod.yaml
 kubectl wait --for=condition=Ready pod/test-ping --timeout=60s
 kubectl get pods -o wide  # Note the node
-
+```
 
 2. **Start capture by adding annotation:**
 
+```bash
 kubectl annotate pod test-ping tcpdump.antrea.io="5"
-
+```
 
 3. **Check controller logs:**
 
+```bash
 kubectl logs -n kube-system -l app=packetcapture-controller --tail=20
 # Expected: "Starting capture" and "Capture started"
-
+```
 
 4. **Verify capture files in controller pod:**
 
+```bash
 # Find the controller pod on the same node as test-ping
 kubectl get pods -n kube-system -l app=packetcapture-controller -o wide
 
 # Check capture files
 kubectl exec -n kube-system <controller-pod> -- ls -la /capture/
 kubectl exec -n kube-system <controller-pod> -- ps aux | grep tcpdump
+```
 
 5. **Stop capture by removing annotation:**
 
-
+```bash
 kubectl annotate pod test-ping tcpdump.antrea.io-
-
+```
 
 6. **Verify cleanup:**
 
+```bash
 kubectl logs -n kube-system -l app=packetcapture-controller --tail=10
 # Expected: "Annotation removed", "Stopping capture", "Removed capture file"
-
+```
 
 ## Evidence Collection
 
-
+```bash
 # Describe the annotated pod
 kubectl describe pod test-ping > evidence/pod-describe.txt
 
@@ -130,6 +141,7 @@ kubectl cp kube-system/<controller-pod>:/capture/capture-test-ping.pcap0 evidenc
 
 # Read pcap file
 tcpdump -r evidence/capture.pcap > evidence/capture-output.txt
+```
 
 
 ## Evidence
@@ -142,12 +154,13 @@ All evidence files, including logs and captures, were successfully generated and
 
 The \`capture.pcap\` file is in **binary pcap format** (not human-readable text). To view its contents:
 
+```bash
 # View all captured packets
 tcpdump -r evidence/capture.pcap | head -20
 
 # View ICMP ping traffic from the test pod
 tcpdump -r evidence/capture.pcap icmp
-
+```
 
 Or open it in **Wireshark** for graphical analysis.
 
@@ -198,8 +211,9 @@ The DaemonSet requires the following Linux capabilities for tcpdump:
 
 ## Cleanup
 
-
+```bash
 kubectl delete -f deploy/test-pod.yaml
 kubectl delete -f deploy/daemonset.yaml
 kubectl delete -f deploy/rbac.yaml
 kind delete cluster --name antrea-test
+```
